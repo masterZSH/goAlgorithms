@@ -1,4 +1,4 @@
-package structures
+package singlelinkedlist
 
 import (
 	"testing"

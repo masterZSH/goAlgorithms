@@ -1,4 +1,4 @@
-package structures
+package singlelinkedlist
 
 // ListNode 单链表 节点
 type ListNode struct {

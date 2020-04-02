@@ -49,6 +49,23 @@ func PostOrder(n *Node){
 	fmt.Printf("value:%d\n",n.Value)
 }
 
+// LevelOrder 水平遍历
+func LevelOrder(root *Node){
+	var ns [] *Node
+	var n *Node
+	ns = append(ns,root)
+	for len(ns) != 0{
+		n,ns = ns[0],ns[1:]
+		fmt.Printf("value:%d\n",n.Value)
+		if n.Left != nil {
+			ns = append(ns,n.Left)
+		}
+		if n.Right != nil {
+			ns = append(ns,n.Right)
+		}
+	}
+}
+
 
 
 

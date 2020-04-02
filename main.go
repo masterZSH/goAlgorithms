@@ -4,11 +4,13 @@ import (
 	"binarytree"
 	"doublelinkedlist"
 	"fmt"
+	"trie"
 )
 
 func main() {
 	// doubleLinkedListTest();
-	binaryTreeTest()
+	// binaryTreeTest()
+	trieTest()
 }
 
 // 双向链表测试
@@ -54,4 +56,13 @@ func binaryTreeTest() {
 	// 水平遍历 1 2 3 4 5 7 6
 	fmt.Println("---------")
 	binarytree.LevelOrder(root)
+}
+
+// 字典树测试
+func trieTest() {
+	root := trie.NewNode()
+	root.Insert("zsh")
+	fmt.Print(root.Find("zsh"))  // true
+	fmt.Print(root.Find("z"))    // true
+	fmt.Print(root.Find("zsh1")) // false
 }

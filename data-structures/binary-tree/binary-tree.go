@@ -1,9 +1,12 @@
 package binarytree
 
+import (
+	"fmt"
+)
 type Node struct {
-	value int 
-	left *Node
-	right *Node
+	Value int 
+	Left *Node
+	Right *Node
 }
 
 type Tree struct {
@@ -11,8 +14,8 @@ type Tree struct {
 }
 
 func NewNode(value int) *Node {
-	return &{
-		value,nil,nil
+	return &Node{
+		value,nil,nil,
 	}
 }
 
@@ -21,11 +24,30 @@ func InOrder(n *Node){
 	if n == nil {
 		return 
 	}
-	InOrder(n.left)
-	fmt.Printf("value:%d\n",n.value)
-	InOrder(n.right)
+	InOrder(n.Left)
+	fmt.Printf("value:%d\n",n.Value)
+	InOrder(n.Right)
 }
 
+// PreOrder 先序遍历  root-left-right
+func PreOrder(n *Node){
+	if n == nil {
+		return 
+	}
+	fmt.Printf("value:%d\n",n.Value)
+	InOrder(n.Left)
+	InOrder(n.Right)
+}
+
+// PostOrder 后序遍历  left-right-root
+func PostOrder(n *Node){
+	if n == nil {
+		return 
+	}
+	InOrder(n.Left)
+	InOrder(n.Right)
+	fmt.Printf("value:%d\n",n.Value)
+}
 
 
 

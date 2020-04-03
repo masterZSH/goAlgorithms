@@ -6,9 +6,6 @@ type Node struct {
 	isLeaf   bool
 }
 
-type Trie struct {
-	roo *Node
-}
 
 // NewNode 新增字典树节点
 func NewNode() *Node {

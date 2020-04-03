@@ -12,3 +12,10 @@ func compareSlices(a []int, b []int) (int, bool) {
 	}
 	return -1, true
 }
+
+func swap(arr []int, i, j int) {
+	var temp int
+	temp = arr[i]
+	arr[i] = arr[j]
+	arr[j] = temp
+}

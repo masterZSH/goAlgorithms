@@ -1,12 +1,6 @@
 package sorts
 
-func swap(arr []int, i, j int) {
-	var temp int
-	temp = arr[i]
-	arr[i] = arr[j]
-	arr[j] = temp
-}
-
+// 冒泡排序
 func bubbleSort(arr []int) []int {
 	for j := 1; j < len(arr); j++ {
 		for i := 0; i < len(arr)-j; i++ {

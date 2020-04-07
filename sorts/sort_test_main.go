@@ -13,6 +13,7 @@ func compareSlices(a []int, b []int) (int, bool) {
 	return -1, true
 }
 
+// swap交换arr切片中的i和j key的值
 func swap(arr []int, i, j int) {
 	var temp int
 	temp = arr[i]

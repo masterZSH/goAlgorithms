@@ -17,3 +17,6 @@
 - [x] [直接选择排序](https://github.com/masterZSH/goAlgorithms/blob/master/sorts/straight_select_sort.go)
 
 
+## 动态规划
+- [x] [rod-cutting](https://github.com/masterZSH/goAlgorithms/blob/master/dynamic-programming/rod_cutting.go)
+

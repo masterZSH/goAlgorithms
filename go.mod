@@ -20,4 +20,7 @@ require trie v0.0.0
 
 require queue v0.0.0
 
-require stack v0.0.0
+require (
+	golang.org/x/tools v0.0.0-20200425043458-8463f397d07c
+	stack v0.0.0
+)

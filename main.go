@@ -4,13 +4,15 @@ import (
 	"binarytree"
 	"doublelinkedlist"
 	"fmt"
+	"queue"
 	"trie"
 )
 
 func main() {
 	// doubleLinkedListTest();
 	// binaryTreeTest()
-	trieTest()
+	// trieTest()
+	queueTest()
 }
 
 // 双向链表测试
@@ -65,4 +67,14 @@ func trieTest() {
 	fmt.Print(root.Find("zsh"))  // true
 	fmt.Print(root.Find("z"))    // true
 	fmt.Print(root.Find("zsh1")) // false
+}
+
+func queueTest() {
+	var q queue.Queue
+	q.Enqueue(1)
+	q.Enqueue(2)
+	// q.Print()
+	m := q.Dequeue()
+	// fmt.Print(m)
+	q.Print()
 }

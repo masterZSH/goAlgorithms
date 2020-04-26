@@ -6,6 +6,8 @@ replace binarytree v0.0.0 => ./data-structures/binary-tree
 
 replace trie v0.0.0 => ./data-structures/trie
 
+replace queue v0.0.0 => ./data-structures/queue
+
 go 1.13
 
 require doublelinkedlist v0.0.0
@@ -13,3 +15,5 @@ require doublelinkedlist v0.0.0
 require binarytree v0.0.0
 
 require trie v0.0.0
+
+require queue v0.0.0

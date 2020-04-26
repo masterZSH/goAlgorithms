@@ -5,6 +5,7 @@ import (
 	"doublelinkedlist"
 	"fmt"
 	"queue"
+	"stack"
 	"trie"
 )
 
@@ -12,7 +13,8 @@ func main() {
 	// doubleLinkedListTest();
 	// binaryTreeTest()
 	// trieTest()
-	queueTest()
+	// queueTest()
+	stackTest()
 }
 
 // 双向链表测试
@@ -74,7 +76,15 @@ func queueTest() {
 	q.Enqueue(1)
 	q.Enqueue(2)
 	// q.Print()
-	m := q.Dequeue()
+	// m := q.Dequeue()
 	// fmt.Print(m)
 	q.Print()
+}
+
+func stackTest() {
+	var s stack.Stack
+	s.Push('a')
+	s.Push(1)
+	s.Push("any")
+	s.Print()
 }
